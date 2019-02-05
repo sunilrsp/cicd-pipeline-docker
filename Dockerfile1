@@ -11,7 +11,7 @@ pipeline {
 		stage('Build Docker Image'){
 			steps 	{
 				script	{
-					app = docker.build("sunil/node-app")
+					app = docker.build("sunilrsp/node-app")
 					app.inside{
 					sh 'echo $(curl localhost:8081)'
 					}
